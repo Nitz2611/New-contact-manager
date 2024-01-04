@@ -33,7 +33,7 @@ function Login(){
                
                 <div className="mb-3">
                     <label htmlFor="email">
-                        <strong>Eamil</strong>
+                        <strong>Email</strong>
                     </label>
                     <input type="email"
                     placeholder="Enter Email" 
