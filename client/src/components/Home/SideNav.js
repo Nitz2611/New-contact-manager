@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "bootstrap-icons/font/bootstrap-icons.css";
 export default function sideNavbar() {
   return (
     <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark vh-100" style={{width: "280px"}}>
@@ -32,8 +32,8 @@ export default function sideNavbar() {
     <hr/>
     <div className="dropdown">
       <a href="#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="" width="32" height="32" className="rounded-circle me-2"/>
-        <strong>mdo</strong>
+        <img src="https://avatars.githubusercontent.com/u/75838617?s=96&v=4" alt="" width="32" height="32" className="rounded-circle me-2"/>
+        <strong>Nitish Sharma</strong>
       </a>
       <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" >
         <li><a className="dropdown-item" href="#">New project...</a></li>
