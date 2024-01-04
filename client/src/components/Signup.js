@@ -23,7 +23,7 @@ function Signup() {
     }
 
   return (
-    <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
+    <div className="d-flex justify-content-center align-items-center bg-secondary " style={{height: '92vh'}}>
         <div className="bg-dark p-3 rounded w-25 text-light">
             <h2>Register</h2>
             <form 

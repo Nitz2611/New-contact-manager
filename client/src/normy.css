@@ -1,8 +1,3 @@
-ul li a{
-    color:white
-}
-
-ul li .active1{
-    color: aqua;
-    
+.pageHeight{
+    height: vh-92;
 }
