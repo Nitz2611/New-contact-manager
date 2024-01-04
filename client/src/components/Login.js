@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 
 function Login(){
@@ -26,6 +27,8 @@ function Login(){
     }
 
     return(
+        <>
+        <Navbar/>
         <div className="d-flex justify-content-center align-items-center bg-secondary" style={{height: '92vh'}}>
         <div className="bg-dark p-3 rounded w-25 text-light">
             <h2>Login</h2>
@@ -69,6 +72,7 @@ function Login(){
         </div>
         
     </div>
+    </>
     )
 
 }
