@@ -7,16 +7,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
 
 
+
+
 function App() {
   return (
     <div>
       <Router>
-
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Signup />} />
           <Route path="/home" element={<Home />} />
-
         </Routes>
       </Router>
     </div>
