@@ -29,7 +29,7 @@ export default function Home() {
        <SideNav/>
        <div className='d-flex vh-100 vw-100 justify-content-center bg-primary  align-items-center'>
             <div className='w-50 bg-white rounded p-3'>
-                <Link to='/create' className='btn btn-success'>Add +</Link>
+                
                 <table className='table'>
                     <thead>
                         <tr>

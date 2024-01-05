@@ -14,7 +14,7 @@ export default function sideNavbar() {
       <li className="nav-item">
         <NavLink to='/home' className="nav-link active" aria-current="page">
         <i class="bi bi-house-door icon-space"></i>
-          Home
+          Contacts
         </NavLink>
       </li>
       <li>
@@ -39,7 +39,7 @@ export default function sideNavbar() {
         <strong>Nitish Sharma</strong>
       </div>
       <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" >
-        <li><a className="dropdown-item" href="#">New project...</a></li>
+        
         <li><a className="dropdown-item" href="#">Settings</a></li>
         <li><a className="dropdown-item" href="#">Profile</a></li>
         <li><hr className="dropdown-divider"/></li>
