@@ -1,3 +1,8 @@
-.pageHeight{
-    height: vh-92;
+.forSize{
+    font-size: 2rem;
+    margin-right: 0.8rem;
+}
+
+.icon-space{
+    margin-right: 0.5rem;
 }
