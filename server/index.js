@@ -2,12 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const RegisteredModel = require('./models/Registration');
+require('dotenv').config();
 
 const app = express();
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect('mongodb://127.0.0.1:27017/Contact-manager');
+mongoose.connect(process.env.MONGO_URL)
+.then(console.log("DB connected"));
 
 app.post('/', (req, res) =>{
     const {email, password} = req.body;
@@ -35,6 +37,9 @@ app.post('/register', (req,res) =>{
 })
 
 
-app.listen(3001, ()=>{
-    console.log("server is running");
+var port = process.env.PORT || '3001'
+app.listen(port, err => {
+    if (err)
+        throw err
+    console.log('Server listening on port', port)
 })
