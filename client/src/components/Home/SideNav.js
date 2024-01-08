@@ -1,6 +1,6 @@
 import React from 'react'
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function sideNavbar() {
   return (
@@ -42,9 +42,9 @@ export default function sideNavbar() {
       <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" >
         
         <li><a className="dropdown-item" href="#">Settings</a></li>
-        <li><a className="dropdown-item" href="#">Profile</a></li>
+        <li><Link to='/profile' className="dropdown-item">Profile</Link></li>
         <li><hr className="dropdown-divider"/></li>
-        <li><a className="dropdown-item" href="#">Sign out</a></li>
+        <li><Link to='/' className="dropdown-item" >Sign out</Link></li>
       </ul>
     </div>
   </div>
