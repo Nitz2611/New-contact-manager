@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
 import NewContact from './components/Home/NewContact';
 import UpdateContact from './components/Home/UpdateContact';
+import About from './components/Home/About';
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/create" element={<NewContact />} />
           <Route path="/updateContact/:id" element={<UpdateContact />} />
+          <Route path="/about" element={<About />} />
           
         </Routes>
       </Router>

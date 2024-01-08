@@ -23,6 +23,12 @@ export default function sideNavbar() {
           Add New Contact
         </NavLink>
       </li>
+      <li>
+        <NavLink to='/about' className="nav-link text-white">
+        <i class="bi bi-book-half icon-space "></i>
+          About
+        </NavLink>
+      </li>
       
       
      
