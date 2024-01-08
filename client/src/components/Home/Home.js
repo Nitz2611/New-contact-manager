@@ -10,13 +10,13 @@ export default function Home() {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-      axios.get('http://localhost:3001/contacts')
+      axios.get('http://localhost:3001/home')
           .then(result => setUsers(result.data))
           .catch(err => console.log(err))
   }, [])
 
   const handleDelete = (id) => {
-      axios.delete('http://localhost:3001/deleteUser/' + id)
+      axios.delete('http://localhost:3001/deleteContact/' + id)
           .then(res => {
               console.log(res)
               window.location.reload()
@@ -41,22 +41,22 @@ export default function Home() {
                     </thead>
                     <tbody>
                         {
-                            users.map((user) => {
+                            users.map((contact) => {
 
                                 return <tr>
                                     <td>
-                                        {user.name}
+                                        {contact.name}
                                     </td>
                                     <td>
-                                        {user.email}
+                                        {contact.email}
                                     </td>
                                     <td>
-                                        {user.age}
+                                        {contact.age}
                                     </td>
                                     <td>
-                                        <Link to={`/update/${user._id}`} className='btn btn-success'>Update</Link>
+                                        <Link to={`/updateContact/${contact._id}`} className='btn btn-success me-2'>Update</Link>
                                         <button className='btn btn-danger'
-                                            onClick={(e) => handleDelete(user._id)}>Delete</button>
+                                            onClick={(e) => handleDelete(contact._id)}>Delete</button>
                                     </td>
                                 </tr>
                             })

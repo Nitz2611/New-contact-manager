@@ -19,16 +19,11 @@ export default function sideNavbar() {
       </li>
       <li>
         <NavLink to='/create' className="nav-link text-white">
-        <i className="bi bi-speedometer2 icon-space"></i>
+        <i class="bi bi-pencil-square icon-space "></i>
           Add New Contact
         </NavLink>
       </li>
-      <li>
-        <NavLink to='/create' className="nav-link text-white">
-        <i className="bi bi-speedometer2 icon-space"></i>
-          Add New Contact
-        </NavLink>
-      </li>
+      
       
      
     </ul>

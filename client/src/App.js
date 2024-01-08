@@ -5,6 +5,8 @@ import Signup from './components/Signup';
 import Home from './components/Home/Home';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
+import NewContact from './components/Home/NewContact';
+import UpdateContact from './components/Home/UpdateContact';
 
 
 
@@ -17,6 +19,9 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Signup />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/create" element={<NewContact />} />
+          <Route path="/updateContact/:id" element={<UpdateContact />} />
+          
         </Routes>
       </Router>
     </div>
