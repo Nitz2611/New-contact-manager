@@ -34,10 +34,12 @@ export default function sideNavbar() {
      
     </ul>
     <hr/>
-    <div className="dropdown">
-      <div className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+    <div className="dropdown " >
+      <div  className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" style={{cursor: 'pointer'}}>
         <img src="https://avatars.githubusercontent.com/u/75838617?s=96&v=4" alt="" width="32" height="32" className="rounded-circle me-2"/>
+        
         <strong>Nitish Sharma</strong>
+        
       </div>
       <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1" >
         

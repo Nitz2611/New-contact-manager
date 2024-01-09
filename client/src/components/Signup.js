@@ -34,7 +34,7 @@ function Signup() {
                         onSubmit={handleSubmit}
                     >
                         <div className="mb-3">
-                            <label htmlFor="email">
+                            <label htmlFor="name">
                                 <strong>Name</strong>
                             </label>
                             <input type="text"

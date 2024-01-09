@@ -6,3 +6,17 @@
 .icon-space{
     margin-right: 0.5rem;
 }
+
+.searchBox1{
+    width: 80% !important; 
+}
+
+.custSize1{
+    position: relative;
+    width: 85%;
+    height: 85%;
+}
+.pagination-child{
+    position: absolute;
+    bottom: 0;
+}
