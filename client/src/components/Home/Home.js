@@ -31,7 +31,7 @@ export default function Home() {
 
                 <div className='bg-white rounded p-3 custSize1'>
                     <form className="form-inline my-2 my-lg-0  d-flex ">
-                        <input className="form-control mr-sm-2 searchBox1" type="search" placeholder="Search" aria-label="Search" />
+                        <input className="form-control mr-sm-2 searchBox1" type="search" placeholder="Search Contacts" aria-label="Search" />
                         <button className="btn btn-outline-success my-2 my-sm-0 ms-2" type="submit">Search</button>
                     </form>
                     <table className='table'>
