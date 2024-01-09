@@ -7,11 +7,11 @@ import React, { useEffect, useState } from 'react'
 
 export default function Home() {
 
-    const [users, setUsers] = useState([])
+    const [contacts, setContact] = useState([])
 
     useEffect(() => {
         axios.get('http://localhost:3001/home')
-            .then(result => setUsers(result.data))
+            .then(result => setContact(result.data))
             .catch(err => console.log(err))
     }, [])
 
@@ -45,7 +45,7 @@ export default function Home() {
                         </thead>
                         <tbody>
                             {
-                                users.map((contact) => {
+                                contacts.map((contact) => {
 
                                     return <tr>
                                         <td>
@@ -77,7 +77,7 @@ export default function Home() {
                         </ul>
                     </nav>
                 </div>
-                    
+
             </div>
         </div>
     )

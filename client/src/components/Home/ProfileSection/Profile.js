@@ -22,7 +22,7 @@ export default function Profile() {
                   autoComplete="off"
                   name="email"
                   className="form-control rounded-0"
-                  // onChange={(e) => setName(e.target.value)}
+                // onChange={(e) => setName(e.target.value)}
                 />
               </div>
             </div>
